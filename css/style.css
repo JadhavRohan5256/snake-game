@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: url("../img/background.jpg");
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+#boardContainer {
+  width: 700px;
+  height: 700px;
+  background-color: #b6de27f9;
+  margin: 0 auto;
+  margin-top: calc((100vh - 90vh) / 2);
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  border: 2px solid #006400;
+  box-shadow: 5px 5px 100px #000000;
+}
+
+.head {
+  background-color: #000000b9;
+  /* margin: 10px; */
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  /* flex-direction: column;
+  align-items: end; */
+}
+.head > span {
+  width:40%;
+  height:40%;
+  background-color: #fff;
+  border-radius: 50%;
+  display:flex;
+  /* justify-content: flex-end;
+  align-items: center; */
+}
+.head > span span {
+  width:50%;
+  height:50%;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.body {
+  background-color: #000;
+  /* margin: 10px; */
+  /* border-radius: 50%; */
+}
+
+.food {
+  background-color: #006400;
+  margin: 10px;
+  box-shadow: 0px 0px 25px #006400, 0px 0px 50px #006400, 0px 0px 75px #006400,
+    0px 0px 100px #006400;
+  border-radius: 50%;
+}
+
+.non-food-part {
+  background-color: #ff0000;
+  margin: 10px;
+  box-shadow: 0px 0px 25px #ff0000, 0px 0px 50px #ff0000, 0px 0px 75px #ff0000,
+    0px 0px 100px #ff0000;
+  border-radius: 50%;
+}
+/* Score css */
+#score-board {
+  width: 250px;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+#score-board > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 2px solid #000;
+}
