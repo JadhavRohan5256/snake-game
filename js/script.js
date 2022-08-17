@@ -307,3 +307,8 @@ window.addEventListener("keydown", (e) => {
   }
 });
 window.requestAnimationFrame(main);
+// checking window size 
+if(window.innerWidth <= 1300) {
+  alert("This game not developed for mobile and tablet devices. you can open greater than 1300px like Desktop and laptop");
+  document.querySelector("html").style.display = "none";
+}
