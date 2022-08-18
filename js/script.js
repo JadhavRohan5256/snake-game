@@ -229,7 +229,7 @@ let isCollide = () => {
       highScore.innerHTML = storage.scores;
     }
 
-    // gameMusic.play();
+    gameMusic.play();
     if (isCollide()) {
       gameMusic.pause();
       gameOver.play();
