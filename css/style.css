@@ -20,7 +20,7 @@ body {
   height: 700px;
   background-color: #b6de27f9;
   margin: 0 auto;
-  margin-top: calc((100vh - 90vh) / 2);
+  margin-top: calc((100vh - 700px) / 2);
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(20, 1fr);
